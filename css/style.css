@@ -159,6 +159,9 @@ header {
     min-height: 765px;
 	position: relative;
 }
+.pht {
+    margin-top: 44px;
+}
 .banner-layer {
     background: url(../images/)repeat;
     background: rgba(0, 0, 0.6, 0.2);
@@ -353,11 +356,10 @@ h3.agile_tittle.two {
 .progress-bar-striped {
     background-image: none!important;
 }
-
 h3.heading {
     font-size: 45px;
     text-align: center;
-    color: #333;
+    color:black;
     font-weight: 600;
     letter-spacing: 5px;
 	position: relative;
@@ -371,6 +373,26 @@ h3.heading:after {
     left: 45%;
     bottom: -18%;
 }
+
+h3.heading1 {
+    font-size: 45px;
+    text-align: center;
+    color:aqua;
+    font-weight: 600;
+    letter-spacing: 5px;
+    position: relative;
+    
+}
+h3.heading1:after {
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 3px;
+    background:aqua;
+    left: 45%;
+    bottom: -18%;
+}
+
 .about-grids {
     margin-top: 5em;
 }
@@ -474,6 +496,7 @@ h3.heading:after {
 .blog h3.heading:after,.services h3.heading:after{
 	background: #fff;
 }
+
 .blog-grids {
     margin-top: 5em; 
 }
@@ -548,6 +571,9 @@ figure {
 .w3_agile_gallery_effect img {
     width: 100%;
 }
+.gallery{
+    background:#000000
+}
 a.sb {
     display: block;
 }
@@ -601,6 +627,7 @@ a.sb {
 .testimonials h3.heading:after{
     background: #fff;
 }
+
 .clients {
     margin-top: 5em;
 }

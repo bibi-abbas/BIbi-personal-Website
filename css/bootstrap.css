@@ -208,12 +208,8 @@ figure {
 img {
   vertical-align: middle;
   border-style:none;
-  margin-top: 44px;
-  margin-left: 50px;
   
 }
-
-
 
 svg:not(:root) {
   overflow: hidden;
@@ -4956,7 +4952,9 @@ tbody.collapse.show {
 .alert-heading {
   color: inherit;
 }
-
+heading {
+  color:aqua
+}
 .alert-link {
   font-weight: 700;
 }
