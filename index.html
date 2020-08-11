@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 <title>BibiAbbas</title>
-<link rel="icon" href="images/bibiabout.jpg" type="image/gif" sizes="16x16">
+<link rel="icon" href="images/logobibi.png" type="image/gif" sizes="25x25">
 	
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
 		}
 	</script>
 	<!--// Meta tag Keywords -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- css files -->
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
@@ -374,7 +374,7 @@
 			</div>
 			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
 				<h4 class="mb-4">Get In Touch</h4>
-				<form action="#" method="post">
+				<form id="submit-form" action="" >
 					<label><i class="fa mr-2 fa-user" aria-hidden="true"></i> Name</label>
 					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
 					<div class="clearfix"></div>
@@ -475,6 +475,27 @@
 	</script>
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
+
+	<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyDjDQC6KpfJv-tYkIWUHhaut2ZcPWBxjvZZ3-H/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+	</script>
+	<div class="clearfix"> </div>
 
 </body>
 </html>
